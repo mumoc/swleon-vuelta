@@ -1,6 +1,9 @@
 <h1>Mi Lista de Citas</h1>
 <ul>
   <% @users.each do |user| %>
-    <li><%= user.email %></li>
+    <%= form_for [user, user.appointments.new] do |f| %>
+      <%= f.hidden_field :client_email, value: user.email %>
+      <li><%= user.email %><%= f.submit "Nuevo Appointment" %></li>
+    <% end %>
   <% end %>
 </ul>
