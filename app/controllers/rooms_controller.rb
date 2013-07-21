@@ -1,6 +1,6 @@
 class RoomsController < ApplicationController
   def index
-    @rooms = Room.where(:public => true).order("created_at DESC")
+    @rooms = Room.order("created_at DESC")
     @new_room = Room.new
   end
 
