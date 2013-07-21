@@ -4,6 +4,7 @@ gem 'haml'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'opentok'
+gem 'figaro'
 
 gem 'rails', '3.2.13'
 

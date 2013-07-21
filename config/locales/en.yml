@@ -1,5 +1,83 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  busqueda: "Search"
+  resultados_busqueda: "SEARCH RESULTS"
+  tiendas: Vicenza Stores
+  dias: "Monday to Friday"
+  distribuidores: Distributors
+  horario: Costumer Service
+  cont_dir : "Address and Phone"
+  norte: North Region
+  sur: South Region
+  centro: Central Region
+  buscar: Search
+  textBien: "In this site you fulfill your orders (order form), see our stock for immediate delivery (lots available), making downloads of advertising Vicenza and view your orders."
+  textPed: "At the bottom you can fill the fields for a specific order."
+  textPaq: "At the bottom you can select packages requiring immediate delivery."
+  textDes: "At the bottom you can download everything about the company, documents, images, advertising and logo."
+  varios:
+    ver_mas: "View More"
+    regresar: Back
+    correo: Your Email
+  nosotros:
+    descripcion: "<h6>With over 40 years of experience, Vicenza specializes in the design, manufacturing and marketing of leather shoes for the modern woman. Our prime objective is to serve as industry leaders in customer service, quality and latest fashion trends.<br/> <br/> At Vicenza we express our knowledge of our extensive and ever-changing market by offering innovative proposals for high quality and long-lasting products designed in Italy.  We meticulously supervise every step of our manufacturing process to assure all products are delivered in their best condition and timeliest manner.</h6>"
+    objetivo: Our Goal
+    objetivo_text: "Our vision is to provide the best service and offer a product like no other at the best price"
+  contacto:
+    titulo: "Contact Us"
+    nombre: Name
+    apellido: Last Name
+    telefono: Phone
+    ciudad: City 
+    estado: State
+    pais: Country
+    codigo_postal: ZIP Code
+    mensaje: Message
+    email: Email
+    enviar: Send
+  dash:
+    portal: Customer Dashboard
+    bien: Welcome!
+    salir: Log Out
+    lotes: Available Units
+    pedidos: Order Form
+    publicidad: Publicity
+    perfil: Profile
+    lotesP: "At the bottom you can select the packages that we stand ready to send."
+    ordenes: 'My Orders'
+    perfil: My Profile
+    formulario: Order Form
+    infoPerfil: Show profile
+    infoPedido: Generate your custom orders
+    infoLotes: Check availability units
+    infoPubli: Download advertising campaigns
+    infoOrden: General order summary
+    infoSalir: Log out the account
+  menu:
+    espanol: ES
+    ingles: EN 
+    nosotros: ABOUT US
+    clientes: DISTRIBUTORS
+    contacto: CONTACT US
+    home: HOME
+    coleccion: SHOES
+    publicidad: ADVERTISING
+    eventos: EVENTS
+    tiendas: STORES
+  footer:
+    secciones: Sections
+    coleccion: Collection
+    faq: FAQ
+    subscripcion: Newsletter
+    subscripcion_text: "Subscribe today to receive the latest on our products and promotions!"
+    subscripcion_button: Subscribe Me
+    social_media: Social Media
+    social_media_text: "Follow Us!"
+    agreement: All Rights Reserved by Vicenza
+    bt: Job Board
+  views:
+    pagination:
+      first: "&laquo; Primer"
+      last: "Ultimo &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Siguiente &rsaquo;"
+      truncate: "..."
