@@ -1,17 +1,4 @@
 class User::AppointmentsController < ApplicationController
-  # GET /appointments
-  # GET /appointments.json
-  def index
-    @appointments = Appointment.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @appointments }
-    end
-  end
-
-  # GET /appointments/1
-  # GET /appointments/1.json
   def show
     @appointment = Appointment.find(params[:id])
 
@@ -20,9 +7,7 @@ class User::AppointmentsController < ApplicationController
       format.json { render json: @appointment }
     end
   end
-
-  # GET /appointments/new
-  # GET /appointments/new.json
+  º
   def new
     @appointment = Appointment.new
 
@@ -41,7 +26,7 @@ class User::AppointmentsController < ApplicationController
   # POST /appointments.json
   def create
     @appointment = Appointment.new(params[:appointment])
-
+    Invitacion.cita(@appointment.client_email, @appointment.path).deliver
     respond_to do |format|
       if @appointment.save
         format.html { redirect_to @appointment, notice: 'Appointment was successfully created.' }
