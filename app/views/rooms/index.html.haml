@@ -1,0 +1,13 @@
+#newRoom
+  = render 'rooms/newform'
+%fieldset
+  %legend Existing party rooms
+  %table{:cellpadding => "2", :cellspacing => "5"}
+    %tr
+      %th Name
+      %th Started
+    - @rooms.each do |room|
+      %tr
+        %td{:align => "center", :width => "300px"}
+          %a{:href => "/party/#{room.id}"}= room.name
+        %td= start_diff(room.created_at)
