@@ -1,7 +1,9 @@
 Opentok::Application.routes.draw do
-  resources :rooms
+  devise_for :users
 
-  match '/party/:id', :to => "rooms#party", :as => :party, :via => :get
+  resources :users, only: [:show] do
+    resources :appointments
+  end
 
-  root to: 'rooms#index'
+  root to: 'home#index'
 end
