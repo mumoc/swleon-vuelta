@@ -49,7 +49,7 @@
         <ul class="nav">
           <% if current_user %>
             <li><%= link_to "Mis citas", current_user  %></li>
-            <li><%= link_to "Salir", destroy_user_session_path  %></li>
+            <li><%= link_to "Salir", destroy_user_session_path, method: :delete %></li>
           <% else %>
             <li><%= link_to "Ingresar", new_user_session_path  %></li>
             <li><%= link_to "Registrate", user_registration_path  %></li>
