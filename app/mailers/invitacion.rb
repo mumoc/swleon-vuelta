@@ -6,8 +6,9 @@ class Invitacion < ActionMailer::Base
   #
   #   en.invitacion.cita.subject
   #
-  def cita(invitado, direccion)
-    @direccion = direccion
-    mail to: invitado, subject: "Alguien esta para ayudarte"
+  def cita(appointment, user)
+    @appoinment = appointment
+    @user = user
+    mail to: @appoinment.client_email, subject: "Alguien esta para ayudarte"
   end
 end
